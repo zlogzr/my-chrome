@@ -1,0 +1,28 @@
+{
+  "name": "my-chrome-demo",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "my-chrome-demo",
+  "homepage_url": "https://github.com/callumlocke/json-formatter",
+  "minimum_chrome_version": "21",
+  "author": "Nolan",
+  "icons": {
+    "128": "icons/128.png",
+    "32": "icons/32.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/32.png",
+    "default_popup": "popup.html"
+  },
+  // "background": {
+  //   "scripts": ["js/background.js"]
+  // },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["ts/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["*://*/*", "<all_urls>"]
+}
