@@ -20,7 +20,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["ts/content.js"],
+      "js": ["ts/jquery-v3.6.0.js", "ts/content.js"],
       "run_at": "document_start"
     }
   ],

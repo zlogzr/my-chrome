@@ -1,2 +1,3 @@
-var log = "这是一个chrome demo";
-console.log(log);
+$("#change-button").on("click", function () {
+    console.log("11111111");
+});
